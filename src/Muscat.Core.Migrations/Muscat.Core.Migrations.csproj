@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\Muscat.Core\Muscat.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
   </ItemGroup>
 

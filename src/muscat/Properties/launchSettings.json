@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "muscat": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "MUSCAT_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

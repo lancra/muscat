@@ -1,5 +1,8 @@
 root = true
 
+[*/Muscat.Core.Migrations/Migrations/*]
+generated_code = true
+
 [*]
 charset = utf-8
 guidelines = 135
