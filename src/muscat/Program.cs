@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Muscat;
 using Muscat.Core;
+using Muscat.Infrastructure;
 using Muscat.Shared.Errors;
 
 await new CommandLineBuilder(new MuscatCommand())
@@ -23,7 +24,7 @@ await new CommandLineBuilder(new MuscatCommand())
         .ConfigureServices((hostingContext, services) => services
             .AddMuscat()
             .AddMuscatCore()
-            .AddMuscatData(DatabaseLocationProvider.ResolvePath(hostingContext.HostingEnvironment))))
+            .AddMuscatInfrastructure(DatabaseLocationProvider.ResolvePath(hostingContext.HostingEnvironment))))
     .Build()
     .InvokeAsync(args)
     .ConfigureAwait(false);

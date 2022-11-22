@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Muscat.Core.Artists;
 
-namespace Muscat.Core.Data;
+namespace Muscat.Infrastructure.Data;
 
 public class MuscatDbContext : DbContext
 {
@@ -8,6 +9,8 @@ public class MuscatDbContext : DbContext
         : base(options)
     {
     }
+
+    public DbSet<Artist> Artists { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

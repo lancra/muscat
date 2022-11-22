@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "muscat", "src\muscat\muscat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Muscat.Core", "src\Muscat.Core\Muscat.Core.csproj", "{6C7C9584-9877-46D8-A8D0-D0DB850928E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Muscat.Core.Migrations", "src\Muscat.Core.Migrations\Muscat.Core.Migrations.csproj", "{AB1346A7-103D-4BA9-89BE-62D7749F1F60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Muscat.Infrastructure", "src\Muscat.Infrastructure\Muscat.Infrastructure.csproj", "{5EE2F75E-19DC-4E8C-A85A-571B716F0AFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Muscat.Infrastructure.Migrations", "src\Muscat.Infrastructure.Migrations\Muscat.Infrastructure.Migrations.csproj", "{AB1346A7-103D-4BA9-89BE-62D7749F1F60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AB1346A7-103D-4BA9-89BE-62D7749F1F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB1346A7-103D-4BA9-89BE-62D7749F1F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB1346A7-103D-4BA9-89BE-62D7749F1F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE2F75E-19DC-4E8C-A85A-571B716F0AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE2F75E-19DC-4E8C-A85A-571B716F0AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE2F75E-19DC-4E8C-A85A-571B716F0AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE2F75E-19DC-4E8C-A85A-571B716F0AFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{742AE881-3564-42F0-AFC1-A517FD9011E0} = {D7CAB834-D829-4BDF-8B94-AA043B645A94}
 		{6C7C9584-9877-46D8-A8D0-D0DB850928E2} = {D7CAB834-D829-4BDF-8B94-AA043B645A94}
 		{AB1346A7-103D-4BA9-89BE-62D7749F1F60} = {D7CAB834-D829-4BDF-8B94-AA043B645A94}
+		{5EE2F75E-19DC-4E8C-A85A-571B716F0AFB} = {D7CAB834-D829-4BDF-8B94-AA043B645A94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CB69BF4-DEFD-4BFA-989B-DAF75E54FBF8}
