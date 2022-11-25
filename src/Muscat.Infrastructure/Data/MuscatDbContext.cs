@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Muscat.Core.Artists;
+using Muscat.Core.Links;
 
 namespace Muscat.Infrastructure.Data;
 
@@ -10,7 +10,7 @@ public class MuscatDbContext : DbContext
     {
     }
 
-    public DbSet<Artist> Artists { get; set; } = null!;
+    public DbSet<Link> Links { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
