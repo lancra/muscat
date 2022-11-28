@@ -1,6 +1,6 @@
 root = true
 
-[*/Muscat.Infrastructure.Migrations/Migrations/*]
+[*/Muscat.Infrastructure.Migrations/Entries/*]
 generated_code = true
 
 [*]

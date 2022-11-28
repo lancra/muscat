@@ -2,7 +2,7 @@ using System.Collections.Concurrent;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Muscat.Core.SharedKernel;
 
-namespace Muscat.Infrastructure.Data;
+namespace Muscat.Infrastructure.Configuration.DataAccess;
 
 /// <summary>
 /// A registry of <see cref="StronglyTypedIdValueConverter{TStronglyTypedId}" /> instances that can be used to find the preferred

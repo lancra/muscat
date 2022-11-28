@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Muscat.Infrastructure.Data;
+namespace Muscat.Infrastructure.Configuration.DataAccess;
 
 public static class PropertyBuilderExtensions
 {

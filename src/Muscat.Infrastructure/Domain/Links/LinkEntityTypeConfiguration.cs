@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Muscat.Core.Links;
-using Muscat.Infrastructure.Data;
+using Muscat.Infrastructure.Configuration.DataAccess;
 
 namespace Muscat.Infrastructure.Domain.Links;
 

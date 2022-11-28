@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Muscat.Infrastructure.Migrations.Migrations
+namespace Muscat.Infrastructure.Migrations.Entries
 {
     /// <inheritdoc />
     public partial class CreateLinksTable : Migration

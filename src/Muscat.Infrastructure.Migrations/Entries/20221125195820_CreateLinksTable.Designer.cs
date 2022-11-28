@@ -4,11 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Muscat.Infrastructure.Data;
 
 #nullable disable
 
-namespace Muscat.Infrastructure.Migrations.Migrations
+namespace Muscat.Infrastructure.Migrations.Entries
 {
     [DbContext(typeof(MuscatDbContext))]
     [Migration("20221125195820_CreateLinksTable")]

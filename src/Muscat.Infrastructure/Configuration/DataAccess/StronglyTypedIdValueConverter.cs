@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Muscat.Core.SharedKernel;
 
-namespace Muscat.Infrastructure.Data;
+namespace Muscat.Infrastructure.Configuration.DataAccess;
 
 public class StronglyTypedIdValueConverter<TStronglyTypedId> : ValueConverter<TStronglyTypedId, Guid>
     where TStronglyTypedId : StronglyTypedId

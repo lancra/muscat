@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Muscat.Core.Links;
 
-namespace Muscat.Infrastructure.Data;
+namespace Muscat.Infrastructure;
 
 public class MuscatDbContext : DbContext
 {

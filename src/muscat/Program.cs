@@ -1,10 +1,11 @@
 using System.CommandLine.Builder;
 using System.CommandLine.Hosting;
 using System.CommandLine.Parsing;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Muscat;
-using Muscat.Core;
 using Muscat.Infrastructure;
 using Muscat.Shared.Errors;
 
@@ -21,10 +22,9 @@ await new CommandLineBuilder(new MuscatCommand())
     .CancelOnProcessTermination()
     .UseHost(host => host
         .ConfigureHostConfiguration(config => config.AddEnvironmentVariables("MUSCAT_"))
-        .ConfigureServices((hostingContext, services) => services
-            .AddMuscat()
-            .AddMuscatCore()
-            .AddMuscatInfrastructure(DatabaseLocationProvider.ResolvePath(hostingContext.HostingEnvironment))))
+        .UseServiceProviderFactory(new AutofacServiceProviderFactory())
+        .ConfigureContainer((HostBuilderContext hostingContext, ContainerBuilder container) => container
+            .RegisterModule(new MuscatModule(DatabaseLocationProvider.ResolvePath(hostingContext.HostingEnvironment)))))
     .Build()
     .InvokeAsync(args)
     .ConfigureAwait(false);
