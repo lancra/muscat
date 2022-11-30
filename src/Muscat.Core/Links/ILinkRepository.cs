@@ -15,6 +15,9 @@ public interface ILinkRepository
     /// Finds a link using an identifier.
     /// </summary>
     /// <param name="linkId">The identifier of the link to find.</param>
-    /// <returns>The matching matching link if it is found; otherwise, <c>null</c>.</returns>
-    Task<Link?> FindAsync(LinkId linkId);
+    /// <returns>
+    /// The <see cref="Task"/> that represents the asynchronous operation,
+    /// containing the matching matching link if it is found; otherwise, <c>null</c>.
+    /// </returns>
+    Task<Link?> Find(LinkId linkId);
 }
