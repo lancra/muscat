@@ -26,5 +26,11 @@ internal class DataAccessModule : Module
             .AsSelf()
             .As<DbContext>()
             .InstancePerLifetimeScope();
+
+        builder.RegisterAssemblyTypes(ThisAssembly)
+            .Where(type => type.Name.EndsWith("Repository", StringComparison.OrdinalIgnoreCase))
+            .AsImplementedInterfaces()
+            .InstancePerLifetimeScope()
+            .FindConstructorsWith(new AllConstructorsFinder());
     }
 }

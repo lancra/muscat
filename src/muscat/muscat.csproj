@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Muscat.Application\Muscat.Application.csproj" />
     <ProjectReference Include="..\Muscat.Infrastructure\Muscat.Infrastructure.csproj" />
-    <ProjectReference Include="..\Muscat.Infrastructure.Migrations\Muscat.Infrastructure.Migrations.csproj" />
   </ItemGroup>
 
   <ItemGroup>

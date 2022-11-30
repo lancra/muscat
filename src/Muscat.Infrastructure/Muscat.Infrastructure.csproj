@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\Muscat.Application\Muscat.Application.csproj" />
     <ProjectReference Include="..\Muscat.Core\Muscat.Core.csproj" />
   </ItemGroup>
 
