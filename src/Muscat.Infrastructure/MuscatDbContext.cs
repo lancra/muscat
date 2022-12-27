@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Muscat.Core.Links;
+using Muscat.Core.Domains;
 
 namespace Muscat.Infrastructure;
 
@@ -10,7 +10,7 @@ public class MuscatDbContext : DbContext
     {
     }
 
-    public DbSet<Link> Links { get; set; }
+    public DbSet<Domain> Domains { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

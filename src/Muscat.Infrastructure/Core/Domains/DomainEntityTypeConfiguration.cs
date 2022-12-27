@@ -1,25 +1,25 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Muscat.Core.Links;
+using Muscat.Core.Domains;
 using Muscat.Infrastructure.Configuration.DataAccess;
 
-namespace Muscat.Infrastructure.Domain.Links;
+namespace Muscat.Infrastructure.Core.Domains;
 
-public class LinkEntityTypeConfiguration : IEntityTypeConfiguration<Link>
+public class DomainEntityTypeConfiguration : IEntityTypeConfiguration<Domain>
 {
-    public void Configure(EntityTypeBuilder<Link> builder)
+    public void Configure(EntityTypeBuilder<Domain> builder)
     {
         ArgumentNullException.ThrowIfNull(builder);
 
-        builder.ToTable("Links");
-        builder.HasKey(link => link.Id);
+        builder.ToTable("Domains");
+        builder.HasKey(domain => domain.Id);
         builder.HasAlternateKey("_name");
 
-        builder.Property(link => link.Id)
+        builder.Property(domain => domain.Id)
             .HasColumnOrder(0);
 
-        builder.Property<Uri>("_domain")
-            .HasColumnName("Domain")
+        builder.Property<Uri>("_uri")
+            .HasColumnName("Uri")
             .HasColumnOrder(1)
             .IsCaseInsensitive();
 

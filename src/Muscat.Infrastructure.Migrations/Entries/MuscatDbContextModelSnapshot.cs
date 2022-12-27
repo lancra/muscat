@@ -16,7 +16,7 @@ namespace Muscat.Infrastructure.Migrations.Entries
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
 
-            modelBuilder.Entity("Muscat.Core.Links.Link", b =>
+            modelBuilder.Entity("Muscat.Core.Domains.Domain", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("TEXT")
@@ -27,10 +27,10 @@ namespace Muscat.Infrastructure.Migrations.Entries
                         .HasColumnName("CreatedDate")
                         .HasColumnOrder(3);
 
-                    b.Property<string>("_domain")
+                    b.Property<string>("_uri")
                         .IsRequired()
                         .HasColumnType("TEXT")
-                        .HasColumnName("Domain")
+                        .HasColumnName("Uri")
                         .HasColumnOrder(1)
                         .UseCollation("NOCASE");
 
@@ -50,7 +50,7 @@ namespace Muscat.Infrastructure.Migrations.Entries
 
                     b.HasAlternateKey("_name");
 
-                    b.ToTable("Links", (string)null);
+                    b.ToTable("Domains", (string)null);
                 });
 #pragma warning restore 612, 618
         }
